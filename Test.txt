@@ -8,3 +8,12 @@ git add .
 git commit -m "<message>"
 
 
+git log <filename>
+git log .\Test.txt // which will show all details of the commit 
+
+
+git show <filename>
+git show .\Test.txt //it will show the all the details of the file content which line is added and removed.
+
+
+
