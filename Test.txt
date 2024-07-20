@@ -1,1 +1,10 @@
-git demo
+git demo 
+added git command
+
+git status
+git init
+
+git add .
+git commit -m "<message>"
+
+
