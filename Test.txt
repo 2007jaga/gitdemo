@@ -18,7 +18,8 @@ git log .\Test.txt // which will show all details of the commit
 git show <filename>
 git show .\Test.txt //it will show the all the details of the file content which line is added and removed.
 
-
+git checkout new-branch-name: Switches to the new branch.
+git push origin new-branch-name: Pushes the new branch to the remote repository.
 
 Github is owned by Microsoft where GItlab is owned by GitLab Inc.
 
