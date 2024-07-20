@@ -17,3 +17,6 @@ git show .\Test.txt //it will show the all the details of the file content which
 
 
 
+Github is owned by Microsoft where GItlab is owned by GitLab Inc.
+
+
