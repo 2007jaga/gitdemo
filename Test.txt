@@ -1,6 +1,6 @@
 
 
-<< this is Newbranch>>
+<< this is masterbranch>>
 git demo 
 added git command
 
