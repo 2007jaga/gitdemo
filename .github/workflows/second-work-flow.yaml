@@ -1,0 +1,17 @@
+name: File Change Trigger
+
+on:
+  push:
+    paths:
+      - 'C:\Users\JagannathSahu\gitdemo\Test.txt'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Perform your action
+      run: echo "Changes detected in the specified file or directory!"
