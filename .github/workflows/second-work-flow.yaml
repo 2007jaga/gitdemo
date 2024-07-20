@@ -1,10 +1,6 @@
 name: File Change Trigger
 
-on:
-  push:
-    paths:
-      - 'Test.txt'  # Use relative path and forward slashes
-      # - 'path/to/your/file/or/directory/**'  # Example of monitoring a directory
+on: [push]
 
 jobs:
   build:
