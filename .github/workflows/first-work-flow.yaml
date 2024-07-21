@@ -1,8 +1,11 @@
-name: First WorkFlow
-on: [pull_request, push]
-jobs:
-  run-shell-commands:
-    runs-on: ubuntu-latest
-    steps:
-      - name: "setting error"
-        run: 'echo "::error:: Missing semicolon"'
+name : First WorkFlow
+on : [pull_request,push]
+jobs: 
+    run-shell-commands: 
+        runs-on: ubuntu-latest
+        steps: 
+            - name : echo  a string
+              run : echo "hello world testingasdf "
+              
+                
+
