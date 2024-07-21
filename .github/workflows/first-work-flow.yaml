@@ -9,11 +9,11 @@ jobs:
             - name : "error checking"
               run : 'echo "::error:: Missing semicolon"'
             - name : "debug checking"
-              run : 'debug "::error:: Missing semicolon"'
+              run : 'echo "::debug:: Missing semicolon"'
             - name : "warning checking"
-              run : 'warnign "::error:: Missing semicolon"'
+              run : 'echo "::warning:: Missing semicolon"'
             - name : "notice checking"
-              run : 'notice "::error:: Missing semicolon"'
+              run : 'echo "::notice:: Missing semicolon"'
 
               
               
