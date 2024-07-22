@@ -6,14 +6,21 @@ jobs:
         steps: 
             - name : echo  a string
               run : echo "hello world testingasdf "
+
             - name : "error checking"
               run : 'echo "::error:: Missing semicolon"'
+
             - name : "debug checking"
               run : 'echo "::debug:: Missing semicolon"'
+
             - name : "warning checking"
               run : 'echo "::warning:: Missing semicolon"'
+              
             - name : "notice checking"
               run : 'echo "::notice:: Missing semicolon"'
+
+            - name : "envvariablevalue"
+              run : ${{env.ACTION_RUNNER_DEBUG}}
 
               
               
