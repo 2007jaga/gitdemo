@@ -3,6 +3,8 @@ on : [pull_request,push]
 jobs: 
     run-shell-commands: 
         runs-on: ubuntu-latest
+        env: 
+          MY_SECRET_ENV_VAR : ${{secrets.TEST_SECRET}}
         steps: 
             - name : echo  a string
               run : echo "hello world testingasdf "
@@ -20,7 +22,7 @@ jobs:
               run : 'echo "::notice:: Missing semicolon"'
 
             - name : "envvariablevalue"
-              run : 'echo ${{secrets.TEST_SECRET}} '
+              run : 'echo ${{env.MY_SECRET_ENV_VAR}} '
 
               
               
