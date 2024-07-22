@@ -20,7 +20,7 @@ jobs:
               run : 'echo "::notice:: Missing semicolon"'
 
             - name : "envvariablevalue"
-              run : ${{env.ACTION_RUNNER_DEBUG}}
+              run : ${{env.ACTION_STEPS_DEBUG}}
 
               
               
