@@ -22,4 +22,4 @@ jobs:
             - name : "envvariablevalue"
               run: echo $MY_SECRET_ENV_VAR
               env:
-                MY_SECRET_ENV_VAR: ${{ secrets.TEST_SECRET }} 
+                MY_SECRET_ENV_VAR: ${{ Test.secrets.TEST_SECRET }} 
