@@ -22,9 +22,4 @@ jobs:
               run : 'echo "::notice:: Missing semicolon"'
 
             - name : "envvariablevalue"
-              run : 'echo ${{env.MY_SECRET_ENV_VAR}} '
-
-              
-              
-                
-
+              run : 'echo ${{env.MY_SECRET_ENV_VAR}} '  
