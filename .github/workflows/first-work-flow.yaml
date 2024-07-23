@@ -5,10 +5,12 @@ env:
   release : "releaseDire"
   
 jobs: 
+    
     run-shell-commands: 
+        if : github.event_name != 'push'
         runs-on: ubuntu-latest
         environment: test
-        if : github.event_name != 'push'
+       
         steps: 
              
             - name : "envvariablevalue"
