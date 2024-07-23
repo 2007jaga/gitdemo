@@ -8,7 +8,7 @@ jobs:
     run-shell-commands: 
         runs-on: ubuntu-latest
         environment: test
-        if : github.event_name == 'push'
+        if : github.event_name != 'push'
         steps: 
              
             - name : "envvariablevalue"
