@@ -13,3 +13,4 @@ jobs:
                echo ${{vars.TEST_VARIABLE}}
                echo ${{env.relase}}
                echo ${{secrets.TEST_SECRET}}
+               echo ${{github.event_name}}
