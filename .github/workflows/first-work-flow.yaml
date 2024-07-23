@@ -19,3 +19,4 @@ jobs:
                echo ${{env.release}}
                echo ${{secrets.TEST_SECRET}}
                echo ${{github.event_name}}
+               echo 'test'
