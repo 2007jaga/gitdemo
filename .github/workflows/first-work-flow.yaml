@@ -1,5 +1,7 @@
 name : First WorkFlow
 on : [pull_request,push]
+env: 
+  relase : "releaseDire"
 jobs: 
     run-shell-commands: 
         runs-on: ubuntu-latest
@@ -7,4 +9,6 @@ jobs:
         steps: 
              
             - name : "envvariablevalue"
-              run: echo ${{vars.TEST_VARIABLE}}
+              run: |
+               echo ${{vars.TEST_VARIABLE}}
+               echo ${{env.relase}}
