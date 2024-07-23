@@ -1,7 +1,9 @@
 name : First WorkFlow
 on : [pull_request,push]
+run-name: "Expression @${{github.actor}}   @${{github.event_name}}"
 env: 
   relase : "releaseDire"
+  
 jobs: 
     run-shell-commands: 
         runs-on: ubuntu-latest
