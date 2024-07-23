@@ -7,6 +7,4 @@ jobs:
         steps: 
              
             - name : "envvariablevalue"
-              run: echo $MY_SECRET_ENV_VAR
-              env:
-                MY_SECRET_ENV_VAR: echo ${{ env.MY_SECRET_ENV_VAR.TEST_VARIABLE}}
+              run: echo ${{vars.TEST_VARIABLE}}
