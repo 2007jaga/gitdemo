@@ -1,3 +1,22 @@
+ 
+
+name: Env-level-workflow
+on: [push]
+
+jobs:
+  example-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set the value
+        id: step_one
+        run: |
+          echo "action_state=yellow" >> "$GITHUB_ENV"
+      - name: Use the value
+        id: step_two
+        run: |
+          printf '%s\n' "$action_state" # This will output 'yellow'
+        
+
 # name : First WorkFlow
 # on : [pull_request,push]
 # run-name: "Expression @${{github.actor}}   @${{github.event_name}}"
@@ -23,14 +42,14 @@
 
 
 
-name: CI Workflow
-on: [push]
+# name: CI Workflow
+# on: [push]
 
-jobs:
-  build:
-    runs-on: ubuntu-latest #self-hosted  # Uses any available self-hosted runner
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Run a build script
-        run: ./build.sh
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest #self-hosted  # Uses any available self-hosted runner
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v2
+#       - name: Run a build script
+#         run: ./build.sh
