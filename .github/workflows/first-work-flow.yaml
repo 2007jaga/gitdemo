@@ -17,6 +17,7 @@ jobs:
         run: |
           printf '%s\n' "$action_state" # This will output 'yellow'
            printf '%s\n' "$action_state2" 
+           echo "$action_state2"
         
 
 # name : First WorkFlow
