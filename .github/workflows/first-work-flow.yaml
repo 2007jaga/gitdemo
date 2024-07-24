@@ -28,7 +28,7 @@ on: [push]
 
 jobs:
   build:
-    runs-on: self-hosted  # Uses any available self-hosted runner
+    runs-on: ubuntu-latest #self-hosted  # Uses any available self-hosted runner
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
