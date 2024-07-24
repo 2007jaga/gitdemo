@@ -1,22 +1,36 @@
-name : First WorkFlow
-on : [pull_request,push]
-run-name: "Expression @${{github.actor}}   @${{github.event_name}}"
-env: 
-  release : "releaseDire"
+# name : First WorkFlow
+# on : [pull_request,push]
+# run-name: "Expression @${{github.actor}}   @${{github.event_name}}"
+# env: 
+#   release : "releaseDire"
   
-jobs: 
+# jobs: 
     
-    run-shell-commands: 
-        if : github.event_name != 'push'
-        runs-on: ubuntu-latest
-        environment: test
+#     run-shell-commands: 
+#         if : github.event_name != 'push'
+#         runs-on: ubuntu-latest
+#         environment: test
        
-        steps: 
+#         steps: 
              
-            - name : "envvariablevalue"
-              run: |
-               echo ${{vars.TEST_VARIABLE}}
-               echo ${{env.release}}
-               echo ${{secrets.TEST_SECRET}}
-               echo ${{github.event_name}}
-               echo 'test'
+#             - name : "envvariablevalue"
+#               run: |
+#                echo ${{vars.TEST_VARIABLE}}
+#                echo ${{env.release}}
+#                echo ${{secrets.TEST_SECRET}}
+#                echo ${{github.event_name}}
+#                echo 'test'
+
+
+
+name: CI Workflow
+on: [push]
+
+jobs:
+  build:
+    runs-on: self-hosted  # Uses any available self-hosted runner
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Run a build script
+        run: ./build.sh
