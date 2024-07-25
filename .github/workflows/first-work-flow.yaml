@@ -19,6 +19,7 @@ jobs:
           printf '%s\n' "$action_state" # This will output 'yellow'
            printf '%s\n' "$action_state2" 
            echo "$action_state3"
+           echo  $GITHUB_REF  
         
 
 # name : First WorkFlow
@@ -43,6 +44,9 @@ jobs:
 #                echo ${{secrets.TEST_SECRET}}
 #                echo ${{github.event_name}}
 #                echo 'test'
+
+
+                # $GITHUB_REF    vs '${{github_ref}}' 
 
 
 
