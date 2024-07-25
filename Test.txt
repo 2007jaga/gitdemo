@@ -1,5 +1,6 @@
 
 
+<< this is masterbranch>>
 << this is Newbranch123>>
 // low are the git commands
 git demo 
@@ -30,7 +31,11 @@ yaml file has added in the project now we are trying to push it for running the 
  
 added for run the second action file
 
+ 
 raise one pr and see both the Actions is firing or not. chan ges    checking
  
 added for run the second action file sfas df asdf asdf asd
  
+ 
+added for run the second action  stop the action but we will poush the changes. asdf asdf
+>>>>>>> master
