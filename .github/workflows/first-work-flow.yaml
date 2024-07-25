@@ -21,9 +21,11 @@ jobs:
           #  echo "$action_state3"
            echo  $GITHUB_REF   #
            echo  $GITHUB_REF_NAME   # 
-           echo  $GITHUB_REFNAME   # 
+           echo  $GITHUB_EVENT_NAME   # 
            echo '${{ github.ref }}' # Headname
            echo '${{ github.ref_name }}' # Headname 
+           echo '${{ github.action }}' 
+           echo ${{ github.event_name}}
            
 
         
