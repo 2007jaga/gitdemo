@@ -19,9 +19,12 @@ jobs:
           # printf '%s\n' "$action_state" # This will output 'yellow'
           #  printf '%s\n' "$action_state2" 
           #  echo "$action_state3"
-           echo  $GITHUB_REF   # 
+           echo  $GITHUB_REF   #
+           echo  $GITHUB_REF_NAME   # 
+           echo  $GITHUB_REFNAME   # 
            echo '${{ github.ref }}' # Headname
-           echo '${{ github.ref_name }}' # Headname
+           echo '${{ github.ref_name }}' # Headname 
+           
 
         
 
