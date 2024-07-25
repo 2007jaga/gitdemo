@@ -1,0 +1,12 @@
+
+name: CI Workflow
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest #self-hosted  # Uses any available self-hosted runner
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Run a build script
+        run: ./build.sh

@@ -27,11 +27,10 @@ Github is owned by Microsoft where GItlab is owned by GitLab Inc.
 
 yaml file has added in the project now we are trying to push it for running the actions.
 
-
-<<<<<<< HEAD
+ 
 added for run the second action file
 
 raise one pr and see both the Actions is firing or not. chan ges    checking
-=======
+ 
 added for run the second action file sfas df asdf asdf asd
->>>>>>> d173b783f6953fe63eba3990df5c88c007bdfe5a
+ 
