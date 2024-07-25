@@ -19,8 +19,10 @@ jobs:
           # printf '%s\n' "$action_state" # This will output 'yellow'
           #  printf '%s\n' "$action_state2" 
           #  echo "$action_state3"
-           echo  $GITHUB_REF   
-           echo '${{ github.ref }}'
+           echo  $GITHUB_REF   # 
+           echo '${{ github.ref }}' # Headname
+           echo '${{ github.ref_name }}' # Headname
+
         
 
 # name : First WorkFlow
