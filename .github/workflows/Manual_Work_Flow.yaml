@@ -3,7 +3,7 @@ name: Manual_Work_Flow
 on:
   workflow_dispatch: 
   
-
+concurrency: concurrency-1
 jobs:
   demo:
     runs-on: ubuntu-latest
