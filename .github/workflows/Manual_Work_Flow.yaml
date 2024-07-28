@@ -1,12 +1,12 @@
 
 name: Manual_Work_Flow
 on:
-  workFlow-dispatch: 
+  workflow-dispatch: 
   
 
 jobs:
   demo:
     runs-on: ubuntu-latest
     steps:
-      -name: greeting
-       run: 'echo "hello world"'
+      - name: greeting
+        run: 'echo "hello world"'
