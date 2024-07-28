@@ -1,7 +1,7 @@
 
 name: Manual_Work_Flow
 on:
-  workflow-dispatch: 
+  workflow_dispatch: 
   
 
 jobs:
